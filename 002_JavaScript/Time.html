@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Date and Time Clock</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #121212;
+      color: #ffffff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    #clock {
+      font-size: 1.8rem;
+      padding: 20px;
+      border: 2px solid #ffffff40;
+      border-radius: 10px;
+      background-color: #1e1e1e;
+      box-shadow: 0 0 10px #00ffcc50;
+    }
+    #time {
+      font-size: 4rem;
+      margin: 0;
+    }
+    #date {
+      font-size: 2rem;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div id="clock">
+  <h1 id="time">00:00:00 AM</h1>
+  <p id="date">Loading...</p>
+</div>
+  <script src="clock.js"></script>
+</body>
+</html>

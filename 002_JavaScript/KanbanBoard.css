@@ -1,0 +1,86 @@
+* {
+  padding: 0px;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.container {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+  box-sizing: border-box;
+}
+.board {
+  display: flex;
+  flex-direction: column;
+  border: 1.5px solid rgb(101, 117, 127);
+  min-height: 78vh;
+  width: 350px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  position: relative;
+}
+.counter {
+  display: inline-block;
+  background-color: #4caf50; /* green or any color you like */
+  color: white;
+  font-weight: bold;
+  padding: 2px 10px;
+  border-radius: 20px;
+  font-size: 1.4rem;
+  /* margin-left: 50px; */
+  min-width: 25px;
+  text-align: center;
+}
+
+.task-container {
+  flex: 1;
+}
+
+.item {
+  border: 1px solid;
+  padding: 15px 8px;
+  margin-top: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.item:hover {
+  background-color: antiquewhite;
+  color: brown;
+}
+
+.add_task {
+  background-color: #f08089;
+  color: #120909;
+  border: 1px solid;
+  padding: 15px 8px;
+  margin-top: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  width: 310px;
+  display: flex;
+  flex-direction: column;
+}
+
+.add_task:hover {
+  background-color: rgb(218, 73, 78);
+  color: rgb(27, 13, 13);
+}
+
+.theme-toggle {
+  background-color: antiquewhite;
+  color: rgb(189, 42, 42);
+  border: 2px solid rgb(189, 76, 42);
+  border-radius: 50px;
+  font-size: 1.2rem;
+  float: right;
+  margin: 10px;
+  padding: 5px 8px;
+}
+
+.theme-toggle:hover {
+  background-color: rgb(233, 125, 71);
+  color: rgb(9, 17, 19);
+}

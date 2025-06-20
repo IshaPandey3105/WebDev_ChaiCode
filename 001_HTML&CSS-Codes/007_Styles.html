@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS-cascading style sheets</title>
+
+    <link rel="stylesheet" href="first.css" />
+    <style>
+      button {
+        background-color: red;
+        color: white;
+        border: 2px solid black;
+        border-radius: 20px;
+        margin: 10px;
+        padding: 10px;
+        font-size: 30px;
+        cursor: pointer;
+      }
+
+      /* Cascading of button */
+      button {
+        background-color: pink;
+        /* border: 2px solid green; */
+      }
+
+      p {
+        font-size: 30px;
+        padding: 20px;
+        border-radius: 30px;
+      }
+
+      .My-class-a {
+        color: rgb(2, 84, 36);
+        text-decoration: underline;
+      }
+
+      .My-class-b {
+        color: rgb(4, 130, 240);
+      }
+
+      #btn-3 {
+        background-color: aqua;
+        font-family: "Courier New";
+      }
+      /* Specificity algorithm (priority/precedence)--> [tag<class<ID<inline] */
+      #btn-3 {
+        background-color: chocolate;
+        font-family: "Courier New";
+      }
+      /* Its not getting priority */
+      .btn-3 {
+        background-color: aquamarine;
+      }
+    </style>
+  </head>
+  <body>
+    <p
+      style="text-decoration: underline; background-color: yeLlow; color: black"
+    >
+      About CSS
+    </p>
+    <button class="My-class-a" style="background-color: red; color: white">
+      Click1
+    </button>
+    <button class="My-class-b">Click2</button>
+    <button id="btn-3" class="btn-3">Click3</button>
+    <button
+      class="My-class-a"
+      style="background-color: rgb(0, 153, 255); font-weight: bold"
+    >
+      ..Submit..
+    </button>
+    <p class="My-class-a My-class-b">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, laudantium
+      adipisci atque repellendus eaque reprehenderit recusandae corporis
+      necessitatibus illum pariatur.
+    </p>
+    <!-- To use linked css file  -->
+    <button id="B1">B1</button>
+
+    <br />
+
+    <!-- block tags(which are written in different lines eg:p,h1,..) -->
+    <!-- inline tags(which are written in same lines eg:buttons,img,..) -->
+    <!-- we can change this default setting -->
+    <button id="B2" style="display: block">B2</button>
+    <button id="B3" style="display: block">B3</button>
+    
+  </body>
+</html>

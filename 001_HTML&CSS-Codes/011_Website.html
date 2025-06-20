@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Website</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      nav {
+        display: flex;
+        background-color: #1b122d;
+        color: white;
+        justify-content: space-around;
+        align-items: center;
+        padding: 20px 10px;
+      }
+      nav div ul {
+        display: flex;
+        gap: 20px;
+        list-style-type: none;
+        cursor: pointer;
+      }
+      nav div button {
+        padding: 10px 20px;
+        border-radius: 5px;
+        border: none;
+      }
+      nav div button:hover {
+        background-color: rgb(100, 162, 248);
+        color: rgb(77, 25, 10);
+      }
+      .hero {
+        display: flex;
+        margin: 0px;
+        padding: 5px;
+      }
+      /* .hero div {
+        width: 50%;
+      } */
+      .hero div h1 {
+        font-size: 3rem;
+        margin-bottom: 1rem;
+      }
+      .hero div p {
+        font-size: 1.2rem;
+        color: rgb(7, 96, 16);
+        margin-bottom: 1rem;
+      }
+      .hero div button {
+        background-color: #1b122d;
+        color: #fcfbff;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        width: 200px;
+      }
+      .hero div button:hover {
+        background-color: rgb(100, 162, 248);
+        color: rgb(77, 25, 10);
+      }
+      .hero div img {
+        width: 600px;
+        border-radius: 20px;
+        object-fit: cover;
+        box-shadow: 0 0 10px white;
+      }
+      .hero div img:hover {
+        box-shadow: 0 0 20px rgb(12, 69, 169);
+        transform: rotate(1deg);
+        transition: all 0.2s ease-in-out;
+      }
+      .Logo_Text {
+        font-size: 2rem;
+        text-align: center;
+        margin: 20px 0;
+        color: #1b122d;
+      }
+      .logo {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        /* border: 2px solid #1b122d; */
+        margin: 20px 10px;
+        padding: 20px 100px;
+      }
+      .logo div img {
+        width: 200px;
+        object-fit: cover;
+        border-radius: 10px;
+        box-shadow: 0 0 5px rgb(12, 69, 169);
+      }
+      .three_card{
+        display:flex;
+        justify-content: space-evenly;
+        margin: 20px 10%;
+        padding:40px 80px;
+        border: 2px solid #1b122d;
+        box-shadow: 0 0 10px  #1b122d;
+      }
+      .card img{
+        width: 250px;
+        height: 300px;
+        object-fit: cover;
+        border-radius: 50px;
+      }
+      .card{
+        text-align: center;
+        border: 3px solid black;
+        width: 300px;
+        border-radius: 5px;
+        padding: 20px 10px;
+        box-shadow: 0 0 10px  #bf3f0d;
+      }
+      h3{
+        margin: 10px 0;
+      }
+      .card p{
+        margin: 5px 0;
+      }
+      /* MEDIA QUERY */
+      @media screen and (max-width: 976px) {
+        body{
+          background-color: lightgreen;
+        }
+      }
+
+    </style>
+  </head>
+  <body>
+    <nav>
+      <div>
+        <p>MyLogo &#128511</p>
+      </div>
+      <div>
+        <ul>
+          <li>Home</li>
+          <li>About us</li>
+          <li>Contact</li>
+        </ul>
+      </div>
+      <div>
+        <button>Signup</button>
+        <button>Login</button>
+      </div>
+    </nav>
+    <section class="hero">
+      <div style="background-color: aliceblue">
+        <h1>Welcome to my website</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur
+          explicabo tempora perferendis similique rerum numquam, repudiandae
+          odio. Expedita doloribus, libero facere vel enim eius dolores eos
+          perferendis ipsam a labore!
+          </p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt distinctio voluptatibus fuga,
+             dolorem officia et quisquam, culpa sint eum voluptates aperiam laborum, maxime possimus totam nam 
+             accusantium eius repellendus. Consequuntur vel perferendis cupiditate quas officiis ex soluta porro 
+             adipisci earum odio vero accusantium nisi fugit, totam, ab tenetur! Nam, aliquid.
+          </p>
+        </p>
+        <button>Sign in</button>
+      </div>
+      <div>
+        <img src="Girl.png" alt="" />
+      </div>
+    </section>
+
+    <h2 class="Logo_Text">Our Brands</h2>
+
+    <section class="logo">
+      <div>
+        <img
+          src="https://images.pexels.com/photos/2180780/pexels-photo-2180780.jpeg?auto=compress&cs=tinysrgb&w=600"
+          alt=""
+        />
+      </div>
+      <div>
+        <img
+          src="https://images.pexels.com/photos/2235130/pexels-photo-2235130.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+          alt=""
+        />
+      </div>
+      <div>
+        <img
+          src="https://images.pexels.com/photos/430205/pexels-photo-430205.jpeg?auto=compress&cs=tinysrgb&w=600"
+          alt=""
+        />
+      </div>
+      <div>
+        <img
+          src="https://images.pexels.com/photos/258083/pexels-photo-258083.jpeg?auto=compress&cs=tinysrgb&w=600"
+          alt=""
+        />
+      </div>
+    </section>
+
+    <section class="three_card">
+      <div class="card">
+        <img src="https://images.pexels.com/photos/14667502/pexels-photo-14667502.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="">
+        <h3>Mercedes</h3>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+          Sint exercitationem consequuntur dicta beatae molestiae suscipit pariatur,
+          harum itaque! Porro, ullam.
+        </p>
+      </div>
+      <div class="card">
+        <img src="https://images.pexels.com/photos/30313560/pexels-photo-30313560/free-photo-of-sleek-bmw-car-parked-outdoors-in-ankara.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="">
+        <h3>BMW</h3>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+          Sint exercitationem consequuntur dicta beatae molestiae suscipit pariatur,
+          harum itaque! Porro, ullam.
+        </p>
+      </div>
+      <div class="card">
+        <img src="https://images.pexels.com/photos/23939454/pexels-photo-23939454/free-photo-of-photo-of-a-black-mahindra-thar-suv.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="">
+        <h3>Thar</h3>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+          Sint exercitationem consequuntur dicta beatae molestiae suscipit pariatur,
+          harum itaque! Porro, ullam.
+        </p>
+      </div>
+    </section>
+  </body>
+</html>
