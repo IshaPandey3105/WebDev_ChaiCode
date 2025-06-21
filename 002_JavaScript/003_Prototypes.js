@@ -262,3 +262,44 @@ console.log('END');
 // setInterval(() => console.log('I am isha'),3000);// it will run after every 1 second
 // // to stop it we use clearInterval function
 // clearInterval() ; // it will stop the interval function after 
+
+// 9.Function For Unlimited values
+function myFunction() {
+  let sum=0;
+  for(let i =0; i<arguments.length;i++){
+    console.log(arguments[i]);
+    sum=sum+arguments[i];
+  }
+  return sum;
+}
+let result_1 = myFunction(1000,2000,3000,4000,5000,6000,7000,8000,9000);
+console.log("Sum is ::::",result_1)
+
+// or
+
+function myFunction(...numbers) {
+  let sum=0;
+  for(let i =0; i<numbers.length;i++){
+    console.log(numbers[i]);
+    sum=sum+numbers[i];
+  }
+  return sum;
+}
+let result_2 = myFunction(1000,2000,3000,4000,5000,6000,7000,8000,9000);
+console.log("Sum is ::::",result_2)
+
+// but in arrow function we can't use arguments keyword we have to use spread operator
+const myFunction_1 = (...nums) =>{
+  console.log(nums)
+} 
+myFunction_1(1111,5555,7777)
+
+// hoisting in js is a mechanism where we can use a variable before declaring it
+// also we can use a function before declaring it
+// but we can't use a variable value before declaring it
+// hoisting is only applicable for var keyword not for let and const keyword
+// hoisting not applicable for arrow function
+
+// 10. this keyword
+// this keyword is a reference to the current execution context
+// BUT IN ARROW FUNCTION THIS KEYWORD IS NOT APPLICABLE
